@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Biodata Mahasiswa</title>
+</head>
+
+<body>
+
+<header>
+    <h1>Biodata Mahasiswa</h1>
+</header>
+
+<nav>
+    <a href="index.html">Kembali ke Praktikum</a>
+</nav>
+
+<main>
+
+    <section>
+        <h2>Data Mahasiswa</h2>
+
+        <table border="1">
+            <tr>
+                <th>No</th>
+                <th>NIM</th>
+                <th>Nama</th>
+                <th>Program Studi</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>312510011</td>
+                <td>Marisa</td>
+                <td>Teknik Informatika</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>312510461</td>
+                <td>Kensha</td>
+                <td>Teknik Informatika</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>312510045</td>
+                <td>Anggun</td>
+                <td>Teknik Informatika</td>
+            </tr>
+        </table>
+    </section>
+
+    <br>
+
+    <section>
+        <h2>Form Biodata</h2>
+
+        <form>
+            <label for="nama">Nama:</label><br>
+            <input type="text" id="nama" name="nama" required minlength="3">
+            <br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label for="tanggal">Tanggal Lahir:</label><br>
+            <input type="date" id="tanggal" name="tanggal" required>
+            <br><br>
+
+            <label for="prodi">Program Studi:</label><br>
+            <select id="prodi" name="prodi" required>
+                <option value="">-- Pilih Program Studi --</option>
+                <option value="ti">Teknik Informatika</option>
+            </select>
+            <br><br>
+
+            <label>Jenis Kelamin:</label><br>
+            <input type="radio" name="jk" value="laki-laki" required>
+            Laki-laki
+
+            <input type="radio" name="jk" value="perempuan">
+            Perempuan
+
+            <br><br>
+
+            <label for="alamat">Alamat:</label><br>
+            <textarea id="alamat" name="alamat" rows="4" cols="40" required></textarea>
+            <br><br>
+
+            <button type="submit">Kirim</button>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+
+    <br>
+
+    <section>
+        <h2>Multimedia</h2>
+
+        <video controls width="480">
+            <source src="media/video.mp4" type="video/mp4">
+            Browser Anda tidak mendukung video.
+        </video>
+    </section>
+
+</main>
+
+<footer>
+    <p>Praktikum Pemrograman Web - HTML Lanjutan</p>
+</footer>
+
+</body>
+</html>
